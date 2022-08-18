@@ -10,6 +10,7 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "keys.json"
 
 def upload_to_bucket(blob_name, file_path, file_start_name, bucket_name):
     file = os.path.join(file_path, [file for file in os.listdir(file_path) if file.startswith(file_start_name)][0])
+    print(file)
     try:
         client = storage.Client()
         bucket = client.get_bucket(bucket_name)
