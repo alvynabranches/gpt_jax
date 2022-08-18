@@ -30,4 +30,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     print(f"{args.blob_name=}\t{args.bucket_name=}\t{args.file_path=}\t{args.file_start_name=}")
-    upload_to_bucket(args.blob_name, args.file_path, args.file_start_name, args.bucket_name)
+    out = upload_to_bucket(args.blob_name, args.file_path, args.file_start_name, args.bucket_name)
+    print(out)
