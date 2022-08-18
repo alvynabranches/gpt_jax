@@ -29,5 +29,5 @@ if __name__ == '__main__':
     parser.add_argument("--file_start_name")
     args = parser.parse_args()
     
-    # print(f"{args.blob_name=}\t{args.bucket_name=}\t{args.file_path=}")
+    print(f"{args.blob_name=}\t{args.bucket_name=}\t{args.file_path=}\t{args.file_start_name=}")
     upload_to_bucket(args.blob_name, args.bucket_name, args.file_path)
