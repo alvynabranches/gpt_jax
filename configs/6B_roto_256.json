@@ -28,7 +28,8 @@
   "val_set": {
     "redit": "redit.test.index",
     "pile": "pile.val.index",
-    "owt": "openwebtext2_new_inputs.val.index"
+    "owt": "openwebtext2_new_inputs.val.index",
+    "wit": "wit_dalle.val.index"
   },
 
   "eval_harness_tasks": [
@@ -45,7 +46,7 @@
   "ckpt_every": 500,
   "keep_every": 10000,
 
-  "name": "GPT3_6B_pile_rotary",
+  "name": "conditioning_fine_tune",
   "wandb_project": "mesh-transformer-jax",
   "comment": ""
 }
