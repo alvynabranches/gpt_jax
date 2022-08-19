@@ -1,19 +1,24 @@
-time gsutil -m cp "gs://dataset_reddit/train/00213.txt" input/.
-time python3 create_finetune_tfrecords.py input/00213.txt train_00213 --output-dir output
-time python3 save_gcp.py --blob_name train/00213.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00213
-rm input/00213.txt & rm output/train_00213*
+time gsutil -m cp "gs://dataset_reddit/train/00977.txt" input/.
+time python3 create_finetune_tfrecords.py input/00977.txt train_00977 --output-dir output
+time python3 save_gcp.py --blob_name train/00977.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00977
+time rm input/00977.txt & rm output/train_00977*
 
-time gsutil -m cp "gs://dataset_reddit/train/00430.txt" input/.
-time python3 create_finetune_tfrecords.py input/00430.txt train_00430 --output-dir output
-time python3 save_gcp.py --blob_name train/00430.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00430
-rm input/00430.txt & rm output/train_00430*
+time gsutil -m cp "gs://dataset_reddit/train/00976.txt" input/.
+time python3 create_finetune_tfrecords.py input/00976.txt train_00976 --output-dir output
+time python3 save_gcp.py --blob_name train/00976.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00976
+time rm input/00976.txt & rm output/train_00976*
 
-time gsutil -m cp "gs://dataset_reddit/train/00752.txt" input/.
-time python3 create_finetune_tfrecords.py input/00752.txt train_00752 --output-dir output
-time python3 save_gcp.py --blob_name train/00752.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00752
-rm input/00752.txt & rm output/train_00752*
+time gsutil -m cp "gs://dataset_reddit/train/00975.txt" input/.
+time python3 create_finetune_tfrecords.py input/00975.txt train_00975 --output-dir output
+time python3 save_gcp.py --blob_name train/00975.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00975
+time rm input/00975.txt & rm output/train_00975*
 
-time gsutil -m cp "gs://dataset_reddit/train/00978.txt" input/.
-time python3 create_finetune_tfrecords.py input/00978.txt train_00978 --output-dir output
-time python3 save_gcp.py --blob_name train/00978.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00978
-rm input/00978.txt & rm output/train_00978*
+time gsutil -m cp "gs://dataset_reddit/train/00974.txt" input/.
+time python3 create_finetune_tfrecords.py input/00974.txt train_00974 --output-dir output
+time python3 save_gcp.py --blob_name train/00974.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00974
+time rm input/00974.txt & rm output/train_00974*
+
+time gsutil -m cp "gs://dataset_reddit/train/00973.txt" input/.
+time python3 create_finetune_tfrecords.py input/00973.txt train_00973 --output-dir output
+time python3 save_gcp.py --blob_name train/00973.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00973
+time rm input/00973.txt & rm output/train_00973*
