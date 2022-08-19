@@ -22,10 +22,11 @@
   "tpu_size": 8,
 
   "bucket": "gptj_model_weights",
-  "model_dir": "mesh_jax_pile_6B_rotary",
+  "model_dir": "redit_fine_tune",
 
-  "train_set": "pile.train.index",
+  "train_set": "redit.train.index",
   "val_set": {
+    "redit": "redit.test.index",
     "pile": "pile.val.index",
     "owt": "openwebtext2_new_inputs.val.index"
   },
