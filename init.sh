@@ -3,8 +3,8 @@
 # sudo docker container run --name gcp_1 -d alvynabranches/gcp_1
 
 # sudo apt install git -y
-# git clone https://github.com/alvynabranches/gpt_jax
-# cd gpt_jax
+git clone https://github.com/alvynabranches/gpt_jax
+cd gpt_jax
 
 pip install ftfy
 pip install tensorflow
