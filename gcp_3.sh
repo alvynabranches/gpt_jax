@@ -516,31 +516,3 @@ time python3 save_gcp.py --blob_name train/00751.tfrecords --bucket_name reddit_
 time rm input/00751.txt & rm output/train_00751*
 echo "73/77"
 
-
-time gsutil -m cp "gs://dataset_reddit/train/00752.txt" input/.
-time python3 create_finetune_tfrecords.py input/00752.txt train_00752 --output-dir output
-time python3 save_gcp.py --blob_name train/00752.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00752
-time rm input/00752.txt & rm output/train_00752*
-echo "74/77"
-
-
-time gsutil -m cp "gs://dataset_reddit/train/00753.txt" input/.
-time python3 create_finetune_tfrecords.py input/00753.txt train_00753 --output-dir output
-time python3 save_gcp.py --blob_name train/00753.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00753
-time rm input/00753.txt & rm output/train_00753*
-echo "75/77"
-
-
-time gsutil -m cp "gs://dataset_reddit/train/00754.txt" input/.
-time python3 create_finetune_tfrecords.py input/00754.txt train_00754 --output-dir output
-time python3 save_gcp.py --blob_name train/00754.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00754
-time rm input/00754.txt & rm output/train_00754*
-echo "76/77"
-
-
-time gsutil -m cp "gs://dataset_reddit/train/00755.txt" input/.
-time python3 create_finetune_tfrecords.py input/00755.txt train_00755 --output-dir output
-time python3 save_gcp.py --blob_name train/00755.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00755
-time rm input/00755.txt & rm output/train_00755*
-echo "77/77"
-
