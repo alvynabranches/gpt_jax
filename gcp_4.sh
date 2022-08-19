@@ -551,10 +551,3 @@ time python3 save_gcp.py --blob_name train/00982.tfrecords --bucket_name reddit_
 time rm input/00982.txt & rm output/train_00982*
 echo "78/80"
 
-
-time gsutil -m cp "gs://dataset_reddit/train/00983.txt" input/.
-time python3 create_finetune_tfrecords.py input/00983.txt train_00983 --output-dir output
-time python3 save_gcp.py --blob_name train/00983.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00983
-time rm input/00983.txt & rm output/train_00983*
-echo "79/80"
-
