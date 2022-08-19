@@ -7,34 +7,6 @@ pip install transformers
 pip install google-cloud-storage
 
 
-time gsutil -m cp "gs://dataset_reddit/train/00184.txt" input/.
-time python3 create_finetune_tfrecords.py input/00184.txt train_00184 --output-dir output
-time python3 save_gcp.py --blob_name train/00184.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00184
-time rm input/00184.txt & rm output/train_00184*
-echo "45/77"
-
-
-time gsutil -m cp "gs://dataset_reddit/train/00185.txt" input/.
-time python3 create_finetune_tfrecords.py input/00185.txt train_00185 --output-dir output
-time python3 save_gcp.py --blob_name train/00185.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00185
-time rm input/00185.txt & rm output/train_00185*
-echo "46/77"
-
-
-time gsutil -m cp "gs://dataset_reddit/train/00186.txt" input/.
-time python3 create_finetune_tfrecords.py input/00186.txt train_00186 --output-dir output
-time python3 save_gcp.py --blob_name train/00186.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00186
-time rm input/00186.txt & rm output/train_00186*
-echo "47/77"
-
-
-time gsutil -m cp "gs://dataset_reddit/train/00187.txt" input/.
-time python3 create_finetune_tfrecords.py input/00187.txt train_00187 --output-dir output
-time python3 save_gcp.py --blob_name train/00187.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00187
-time rm input/00187.txt & rm output/train_00187*
-echo "48/77"
-
-
 time gsutil -m cp "gs://dataset_reddit/train/00188.txt" input/.
 time python3 create_finetune_tfrecords.py input/00188.txt train_00188 --output-dir output
 time python3 save_gcp.py --blob_name train/00188.tfrecords --bucket_name reddit_training_data --file_path $(pwd)/output --file_start_name train_00188
