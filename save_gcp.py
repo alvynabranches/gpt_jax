@@ -3,13 +3,14 @@ import argparse
 import google.auth as auth
 from google.cloud import storage
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "keys.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "gpt-j-and-gpt-neox20b_keys.json"
 # credentials, project = auth.default()
 # client = storage.Client(credentials=credentials)
 # buckets = client.list_buckets()
 
-def upload_to_bucket(blob_name, file_path, file_start_name, bucket_name):
-    file = os.path.join(file_path, [file for file in os.listdir(file_path) if file.startswith(file_start_name)][0])
+# def upload_to_bucket(blob_name, file_path, file_start_name, bucket_name):
+def upload_to_bucket(blob_name, file, bucket_name):
+    # file = os.path.join(file_path, [file for file in os.listdir(file_path) if file.startswith(file_start_name)][0])
     # print(file)
     try:
         client = storage.Client()
