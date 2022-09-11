@@ -21,8 +21,8 @@
 
   "tpu_size": 8,
 
-  "bucket": "gptj_model_weights",
-  "model_dir": "redit_fine_tune",
+  "bucket": "gptjax_model_weights",
+  "model_dir": " qna_weights/step_100",
 
   "train_set": "redit.train.index",
   "val_set": {
